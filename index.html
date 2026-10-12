@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eng. Mostafa Moawad Ibrahim - Linktree</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #2c1654 0%, #150a2e 50%, #090314 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: rgba(35, 18, 68, 0.75);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 2px solid rgba(212, 175, 55, 0.4);
+            border-radius: 24px;
+            padding: 35px 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7), inset 0 1px 15px rgba(212, 175, 55, 0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-container {
+            position: relative;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(135deg, #d4af37, #6b21a8, #d4af37);
+            margin-bottom: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: contain;
+            background-color: #1a0b36;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 800;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: #d4af37;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .bio {
+            font-size: 14px;
+            color: #e2e8f0;
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+
+        .links-list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #4c1d95 0%, #2e1065 100%);
+            border: 1.5px solid rgba(212, 175, 55, 0.5);
+            border-radius: 14px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), inset 0 1px 3px rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.2), transparent);
+            transition: 0.5s;
+        }
+
+        .link-btn:hover::before {
+            left: 100%;
+        }
+
+        .link-btn:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, #5b21b6 0%, #4c1d95 100%);
+            border-color: #d4af37;
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+            color: #d4af37;
+        }
+
+        .link-btn i {
+            font-size: 20px;
+            color: #d4af37;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #cbd5e1;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        .footer span {
+            color: #ef4444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- الصورة الشخصية -->
+        <div class="profile-container">
+            <img src="profile.jpg" alt="Eng. Mostafa Moawad Ibrahim" class="profile-img">
+        </div>
+
+        <!-- الاسم والمسمى -->
+        <h1>Eng. Mostafa Moawad Ibrahim</h1>
+        <div class="subtitle">Mechanical Power Engineering</div>
+        
+        <!-- نبذة تعريفية -->
+        <div class="bio">
+            Mechanical Engineer with a strong foundation in mechanical design, CFD analysis, and HVAC systems. Holder of multiple professional SolidWorks certifications.
+        </div>
+
+        <!-- قائمة الروابط -->
+        <div class="links-list">
+            <!-- واتساب -->
+            <a href="https://wa.me/201029362097" target="_blank" class="link-btn">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+
+            <!-- اتصال -->
+            <a href="tel:+201029362097" class="link-btn">
+                <i class="fa-solid fa-phone"></i> Call Me
+            </a>
+
+            <!-- فيسبوك -->
+            <a href="https://www.facebook.com/share/1Ai9b9n445/" target="_blank" class="link-btn">
+                <i class="fa-brands fa-facebook"></i> Facebook
+            </a>
+
+            <!-- لينكد إن -->
+            <a href="https://www.linkedin.com/in/mostafa-moawad-338a9a2a5?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="link-btn">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+
+            <!-- تحميل السيرة الذاتية CV -->
+            <a href="Mostafa_Moawad_Ibrahim_CV.pdf" download="Mostafa_Moawad_Ibrahim_CV.pdf" class="link-btn">
+                <i class="fa-solid fa-file-arrow-down"></i> Download My CV
+            </a>
+
+            <!-- البريد الإلكتروني -->
+            <a href="mailto:mostafamoawad2004@gmail.com" class="link-btn">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+        </div>
+
+        <!-- الحقوق في الأسفل -->
+        <div class="footer">
+            Designed with <span>❤️</span> for Eng. Mostafa Moawad © 2026
+        </div>
+    </div>
+
+</body>
+</html>
